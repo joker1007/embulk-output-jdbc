@@ -37,7 +37,7 @@ public class MySQLOutputPlugin
         public String getDatabase();
 
         @Config("transaction_isolation_level")
-        @ConfigDefault("repeatable_read")
+        @ConfigDefault("\"REPEATABLE_READ\"")
         public TransactionIsolationLevel getTransactionIsolationLevel();
     }
 
